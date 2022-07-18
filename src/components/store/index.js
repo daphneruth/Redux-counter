@@ -16,5 +16,6 @@ return state;
 }
 
 const store = redux.createStore(counterReducer);
+}
 
 export default store;
