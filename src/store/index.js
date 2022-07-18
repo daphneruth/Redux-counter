@@ -1,4 +1,11 @@
-import {createStore} from 'redux'
+//import { createStore} from 'redux';
+const redux = require('redux');
+
+//import {redux} from 'react';
+
+
+
+
 const counterReducer = (state = {counter: 0}, action) => {
 
     if (action.type ==='increment') {
@@ -18,11 +25,11 @@ const counterReducer = (state = {counter: 0}, action) => {
         return{
             counter : state.counter - 1
         }
+    }
 return state;
    
 }
+const store=redux.createStore(counterReducer);
 
-const store = redux.createStore(counterReducer);
-}
 
 export default store;
