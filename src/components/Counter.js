@@ -6,21 +6,21 @@ import React from 'react';
 const Counter = () => {
  const dispatch= useDispatch()
   const counter=useSelector(state =>state.counter);
-  const toggleCounterHandler = () => {};
+ // const toggleCounterHandler = () => {};
   const show=useSelector(state=>state.showCounter);
 
 
-  const incrementHandler = () => {
+  const increaseHandler = () => {
     dispatch({type :'increase', amount: 5})
   }
-  const increaseHandler = () => {
+  const incrementHandler = () => {
     dispatch({type :'increment'})
   }
   const decrementHandler = () => {
     dispatch({type:'decrement'})
   }
 
-  const toggleHandler = () => {
+  const toggleCounterHandler = () => {
     dispatch({type:'toggle'})
   }
 
