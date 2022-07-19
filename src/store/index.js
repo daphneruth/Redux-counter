@@ -19,7 +19,12 @@ createSlice({
             state.counter--;
         
         
-    }
+    },
+    increase(state, action){
+        state.counter =state.counter + counter.amount;
+    
+    
+
 })
 
 
