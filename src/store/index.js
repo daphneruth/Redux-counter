@@ -1,4 +1,6 @@
 //import { createStore} from 'redux';
+import {createSlice} from '@reduxjs/toolkit';
+
 const redux = require('redux');
 
 //import {redux} from 'react';
