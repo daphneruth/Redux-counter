@@ -9,13 +9,14 @@ const Counter = () => {
  // const toggleCounterHandler = () => {};
   const show=useSelector(state=>state.showCounter);
 
+  const incrementHandler = () => {
+    dispatch(counterActions.increment())
+  }
 
   const increaseHandler = () => {
     dispatch({type :'increase', amount: 5})
   }
-  const incrementHandler = () => {
-    dispatch({type :'increment'})
-  }
+  
   const decrementHandler = () => {
     dispatch({type:'decrement'})
   }
