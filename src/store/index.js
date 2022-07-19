@@ -7,6 +7,20 @@ const redux = require('redux');
 
 
 const initialState= {counter: 0, showCounter:true};
+createSlice({
+    name:'counter',
+    initialState,
+    reducers: {
+        increment(state){
+            state.counter++;
+        
+        },
+        decrement(state){
+            state.counter--;
+        
+        
+    }
+})
 
 
 const counterReducer = (state = initialState, action) => {
